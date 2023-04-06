@@ -29,7 +29,7 @@ Just open your composer.json file and add the package name ```(e.g. "gabordemooi
 ```json
 {
     "require": {
-        "gabordemooij/redbean": "dev-master"
+        "temurumaru/redbean": "dev-master"
     }
 }
 ```
