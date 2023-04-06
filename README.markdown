@@ -24,7 +24,7 @@ Optional: sha256sum and check signature.
 Installation via Composer (not recommended)
 -----------------------------------------
 
-Just open your composer.json file and add the package name ```(e.g. "gabordemooij/redbean": "dev-master")``` in your require list.
+Just open your composer.json file and add the package name ```(e.g. "temurumaru/redbean": "dev-master")``` in your require list.
 
 ```json
 {
