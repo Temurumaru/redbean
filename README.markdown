@@ -24,24 +24,24 @@ Optional: sha256sum and check signature.
 Installation via Composer (not recommended)
 -----------------------------------------
 
-Just open your composer.json file and add the package name ```(e.g. "temurumaru/redbean": "dev-master")``` in your require list.
+Just open your composer.json file and add the package name ```(e.g. "temurumaru/threadbean": "dev-master")``` in your require list.
 
 ```json
 {
     "require": {
-        "temurumaru/redbean": "dev-master"
+        "temurumaru/threadbean": "dev-master"
     }
 }
 ```
 
 **NOTE**: 
-You will find many examples on the RedBean website make use of RedBean's `R` class. Because of namespaced autoloading in Composer, this class will be available as `\RedbeanPHP\R` instead of `R`. If you desire to use the much shorter `R` alias, you can add a `use` statement at the beginning of your code:
+You will find many examples on the ThreadBean website make use of ThreadBean's `R` class. Because of namespaced autoloading in Composer, this class will be available as `\RedbeanPHP\R` instead of `R`. If you desire to use the much shorter `R` alias, you can add a `use` statement at the beginning of your code:
 
 ```php
 use \RedBeanPHP\R as R;
 ```
 **NOTE:**
-It is important to note that when using RedBeanPHP with Composer, there are some extra precautions needed when working with [Models](https://redbeanphp.com/index.php?p=/models). Due to the namespace requirements of Composer, when creating Models we need to use the `SimpleModel` to extend, not `RedBean_SimpleModel`. Furthermore, we need to specify the namespace of the `SimpleModel`, so a full example of using a Model with RedBean with Composer is as follows:
+It is important to note that when using ThreadBeanPHP with Composer, there are some extra precautions needed when working with [Models](https://redbeanphp.com/index.php?p=/models). Due to the namespace requirements of Composer, when creating Models we need to use the `SimpleModel` to extend, not `RedBean_SimpleModel`. Furthermore, we need to specify the namespace of the `SimpleModel`, so a full example of using a Model with RedBean with Composer is as follows:
 
 ```php
 use \RedBeanPHP\R;
@@ -57,7 +57,7 @@ Notice that we also need to add the `use \RedBeanPHP\R` statement so that we can
 Quick Example
 -------------
 
-How we store a book object with RedBeanPHP:
+How we store a book object with ThreadBeanPHP:
 ```php
 $book = R::dispense("book");
 $book->author = "Santa Claus";
@@ -71,7 +71,7 @@ Yep, it's that simple.
 More information
 ----------------
 
-For more information about RedBeanPHP please consult
-the RedBeanPHP website:
+For more information about ThreadBeanPHP please consult
+the ThreadBeanPHP website:
 
-https://www.redbeanphp.com/
+https://www.2204.com/threadbean
