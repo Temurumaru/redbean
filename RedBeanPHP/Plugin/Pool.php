@@ -6,7 +6,7 @@ use RedBeanPHP\ToolBox;
 use RedBeanPHP\OODBBean;
 use RedBeanPHP\OODB;
 use RedBeanPHP\BeanHelper;
-use RedBeanPHP\R;
+use RedBeanPHP\C;
 
 /**
  * @experimental
@@ -236,14 +236,14 @@ class PoolDB extends OODB {
 }
 
 
-R::ext( 'addPoolDatabase', function( $dbName, $dsn, $user=NULL, $pass=NULL ) {
-	R::addDatabase( $dbName, $dsn, $user, $pass );
-	R::selectDatabase( $dbName );
+C::ext( 'addPoolDatabase', function( $dbName, $dsn, $user=NULL, $pass=NULL ) {
+	C::addDatabase( $dbName, $dsn, $user, $pass );
+	C::selectDatabase( $dbName );
 	list($oodb, $adapter, $writer, ) = R::getExtractedToolbox();
 	$poolDB = new PoolDB( $dbName, $oodb );
 	$toolbox = new ToolBox( $poolDB, $adapter, $writer );
 	$poolDB->setToolBox( $toolbox );
-	R::$toolboxes[$dbName]=$toolbox;
-	R::selectDatabase( $dbName, TRUE );
+	C::$toolboxes[$dbName]=$toolbox;
+	C::selectDatabase( $dbName, TRUE );
 } );
 

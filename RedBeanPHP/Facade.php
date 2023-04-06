@@ -1769,7 +1769,7 @@ class Facade
 	/**
 	 * Same as taggedAll() but counts beans only (does not return beans).
 	 *
-	 * @see R::taggedAll
+	 * @see C::taggedAll
 	 *
 	 * @param string          $beanType type of bean you are looking for
 	 * @param string|string[] $tagList  list of tags to match
@@ -1786,7 +1786,7 @@ class Facade
 	/**
 	 * Same as tagged() but counts beans only (does not return beans).
 	 *
-	 * @see R::tagged
+	 * @see C::tagged
 	 *
 	 * @param string          $beanType type of bean you are looking for
 	 * @param string|string[] $tagList  list of tags to match

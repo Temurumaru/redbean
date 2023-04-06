@@ -16,6 +16,6 @@ namespace RedBeanPHP;
  * @license BSD/GPLv2
  *
  */
-class R extends Facade
+class C extends Facade
 {
 }
