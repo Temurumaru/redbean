@@ -1,8 +1,8 @@
 {
-  "name": "temurumaru/redbean",
-  "description": "RedBeanPHP ORM",
+  "name": "temurumaru/threadbean",
+  "description": "ThreadBeanPHP ORM",
   "keywords": ["orm"],
-  "homepage": "https://2204.com/redbean",
+  "homepage": "https://2204.com/threadbean",
   "license": "BSD-3-Clause",
   "authors": [
     {
@@ -21,7 +21,7 @@
   },
   "autoload": {
     "psr-4": {
-      "RedBeanPHP\\" : "RedBeanPHP"
+      "ThreadBeanPHP\\" : "ThreadBeanPHP"
     }
   }
 }
