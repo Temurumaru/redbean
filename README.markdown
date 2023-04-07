@@ -1,9 +1,9 @@
-RedBeanPHP 5
+ThreadBeanPHP 5
 ============
 
 [![Build Status](https://travis-ci.org/gabordemooij/redbean.svg?branch=master)](https://travis-ci.org/gabordemooij/redbean)
 
-RedBeanPHP is an easy to use ORM tool for PHP.
+ThreadBeanPHP is an easy to use ORM tool for PHP.
 
 * Automatically creates tables and columns as you go
 * No configuration, just fire and forget
@@ -12,7 +12,7 @@ RedBeanPHP is an easy to use ORM tool for PHP.
 Installation (recommended)
 ---------------------------
 
-Download RedBeanPHP from the website:
+Download ThreadBeanPHP from the website:
 
 https://redbeanphp.com/download
 
